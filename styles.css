@@ -492,49 +492,59 @@ body {
     background: #ff8c94;
   }
   
-  /* Media queries pour petits écrans */
+  /* Styles globaux */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Adaptation pour les petits écrans */
 @media (max-width: 768px) {
-  /* Ajustement de la taille de la police pour les éléments principaux */
+  /* Modifier la taille du texte et des éléments pour les écrans plus petits */
   .msg {
-    font-size: 60px;
+    font-size: 60px; /* Taille réduite du message */
     top: 40%;
   }
-
-  /* Ajustement de la taille du texte dans les années */
-  .year > span {
+  
+  .year {
+    top: 350px; /* Ajuster la position des éléments */
+  }
+  
+  .year span {
+    font-size: 120px;
+  }
+  
+  .first_year span {
     font-size: 100px;
   }
 
-  .first_year {
-    margin-right: 50px;
+  .new {
+    right: 50px; /* Réduire la position de l'élément "new" */
   }
 
-  /* Ajustement de la position et taille du bouton festif */
-  .festive-button {
-    font-size: 1rem;
-    padding: 10px 25px;
-    left: 30%;
-  }
-
-  /* Ajustement de la position du ballon */
   .balloon {
     width: 80px;
     height: 100px;
-    margin-top: -250px;
   }
 
-  /* Ajustement de la taille du chatbot */
+  .festive-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    left: 35%; /* Ajuster la position du bouton */
+    bottom: -300px;
+  }
+
+  /* Ajuster la taille du chatbot */
   #chat-container {
-    width: 350px;
-    height: 500px;
+    width: 90%;
+    height: 80%;
   }
-
+  
   #chat-header {
     font-size: 16px;
-  }
-
-  #input-container {
-    padding: 8px;
   }
 
   #user-input {
@@ -542,54 +552,24 @@ body {
   }
 
   #send-btn {
-    padding: 8px 15px;
-  }
-
-  /* Ajustement de la taille du bouton du chatbot */
-  .open-chatbot-btn {
-    padding: 10px 15px;
+    padding: 8px 16px;
     font-size: 14px;
-  }
-
-  #open-chatbot-btn:hover {
-    background: #ff8c94;
-  }
-
-  /* Modifier le positionnement et la taille de certains éléments */
-  .year {
-    top: 300px;
-  }
-
-  .new {
-    right: -50px;
-  }
-
-  .old {
-    margin-left: -60px;
-  }
-
-  .cracker {
-    width: 3px;
-    height: 60px;
   }
 }
 
-/* Media queries pour très petits écrans */
+/* Adaptation pour les très petits écrans (téléphones) */
 @media (max-width: 480px) {
-  /* Réduire la taille du texte et des éléments */
   .msg {
-    font-size: 50px;
-    top: 35%;
+    font-size: 40px; /* Taille encore plus petite pour les téléphones */
+    top: 30%;
+  }
+  
+  .year {
+    top: 250px; /* Ajuster la position pour plus d'espace */
   }
 
-  .year > span {
-    font-size: 80px;
-  }
-
-  .festive-button {
-    font-size: 0.9rem;
-    padding: 8px 20px;
-    left: 25%;
+  .year span {
+    font-size: 90px;
   }
 
   .balloon {
@@ -597,17 +577,20 @@ body {
     height: 80px;
   }
 
-  #chat-container {
-    width: 300px;
-    height: 450px;
+  .festive-button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    left: 30%;
+    bottom: -250px;
   }
 
+  #chat-container {
+    width: 95%;
+    height: 70%;
+  }
+  
   #chat-header {
     font-size: 14px;
-  }
-
-  #input-container {
-    padding: 6px;
   }
 
   #user-input {
@@ -615,21 +598,8 @@ body {
   }
 
   #send-btn {
-    padding: 6px 12px;
-  }
-
-  /* Modifier les positions des éléments */
-  .year {
-    top: 200px;
-  }
-
-  .old {
-    margin-left: -40px;
-  }
-
-  .cracker {
-    width: 2px;
-    height: 50px;
+    padding: 6px 14px;
+    font-size: 12px;
   }
 }
 

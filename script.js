@@ -59,6 +59,20 @@
   });
 
 
+  $(document).ready(function () {
+    // Lancer automatiquement les feux d'artifice sur toute la page
+    $('body').fireworks();
+
+    // Affichage du chatbot
+    $('#open-chatbot-btn').click(function () {
+        $('#chat-modal').fadeIn();
+    });
+
+    $('#close-chatbot-btn').click(function () {
+        $('#chat-modal').fadeOut();
+    });
+});
+
 
 
 
