@@ -1,22 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatbot Festif</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2023</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="jquery.fireworks.js"></script>
 </head>
 <body>
-  <div id="chat-container">
-    <div id="chat-header">🎆 Festibot : Bonne Année 2025 🎉</div>
-    <div id="chat-window">
-      <div id="messages"></div>
+    <div class="msg">Happy New Year
+        
     </div>
-    <div id="input-container">
-      <input type="text" id="user-input" placeholder="Écris ton message ici..." />
-      <button id="send-btn">Envoyer</button>
+    
+
+    <div class="year">
+        <span class="first_year">
+            <span class="y1">2</span>
+            <span class="y2">0</span>
+            <span class="y3">2</span>
+        </span>
+        <span class="old">4</span>
+        <span class="y4 new">5</span>
+        <div class="balloon"></div>
+    </div>
+
+   
+      
+    <div class="firework" id="firework1">
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+    </div>
+
+
+    <div class="firework" id="firework2">
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+    </div>
+    <div class="firework" id="firework3">
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+    </div>
+
+
+
+
+    <button id="open-chatbot-btn" class="festive-button">Faites un Vœu ✨</button>
+    <!-- Popup du chatbot -->
+  <div id="chat-modal" class="modal">
+    <div id="chat-container">
+      <div id="chat-header">
+        🎆 Festibot : Bonne Année 2025 🎉
+        <button id="close-chatbot-btn">❌</button>
+      </div>
+      <div id="chat-window">
+        <div id="messages"></div>
+      </div>
+      <div id="input-container">
+        <input type="text" id="user-input" placeholder="Écris ton message ici..." />
+        <button id="send-btn">Envoyer</button>
+      </div>
     </div>
   </div>
+
   <script src="script.js"></script>
+    
 </body>
+<script>
+    $(document).ready(function () {
+        $('body').fireworks();
+    });
+</script>
 </html>
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2023</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="jquery.fireworks.js"></script>
+</head>
+<body>
+    <div class="msg">Happy New Year</div>
+    <div class="year">
+        <span class="first_year">
+            <span class="y1">2</span>
+            <span class="y2">0</span>
+            <span class="y3">2</span>
+        </span>
+        <span class="old">4</span>
+        <span class="y4 new">5</span>
+        <div class="balloon"></div>
+    </div>
+    <div class="firework" id="firework1">
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+    </div>
+    <div class="firework" id="firework2">
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+    </div>
+    <div class="firework" id="firework3">
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+        <div class="cracker"></div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('body').fireworks();
+    });
+</script>
+</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fireworks Fullscreen</title>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="jquery.fireworks.js"></script>
+    <style>
+        /* S'assurer que la div couvre toute la page */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Pas de défilement */
+        }
+
+        .fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000; /* Fond noir pour mieux voir les feux d'artifice */
+        }
+    </style>
+</head>
+<body>
+    <div class="fullscreen"></div>
+
+    <script>
+        $(document).ready(function() {
+            // Lancer automatiquement les feux d'artifice sur toute la page
+            $('div.fullscreen').fireworks();
+        });
+    </script>
+</body>
+</html>-->
